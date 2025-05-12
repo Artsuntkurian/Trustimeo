@@ -1,4 +1,4 @@
-# 🕵️‍♂️ Deepfake Detector (Flask + ViT)
+# 🕵️‍♂️ Trustimeo (Flask + ViT)
 
 A web-based application to detect deepfake images or videos using a **Vision Transformer (ViT)** model built with **PyTorch** and deployed via **Flask**.
 
@@ -17,15 +17,15 @@ A web-based application to detect deepfake images or videos using a **Vision Tra
 
 ## 📷 Demo Preview
 
-> ![Preview Screenshot](screenshots/home.png)  
-> _Replace with your own screenshot image and rename to `home.png`_
+> ![Preview Screenshot](screenshots/web_ui.png)  
+
 
 ---
 
 ## 📁 Project Structure
 
 ```
-deepfake-detector/
+Trustimeo/
 ├── app/
 │   ├── __init__.py             # Flask app factory
 │   ├── routes.py               # Flask routes (upload, prediction)
@@ -55,7 +55,7 @@ deepfake-detector/
 ### 📦 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/deepfake-detector.git
+git clone https://github.com/Artsuntkurian/Trustimeo.git
 cd deepfake-detector
 ```
 
@@ -148,10 +148,9 @@ The model was evaluated on a held-out validation set. Below are the metrics:
 Here are some screenshots of the app in action:
 
 ### 🔘 Home Page
-![Home](screenshots/home.png)
+![Home](screenshots/web_ui.png)
 
-### 📤 Upload Interface
-![Upload](screenshots/upload.png)
+
 
 ### ✅ Prediction Result
 ![Result](screenshots/result.png)
@@ -191,8 +190,8 @@ You can test the app with the following sample files:
 
 Created by **[Your Name]**
 
-- Email: deepfake@gmail.com
-- GitHub: [@your-username](https://github.com/your-username)
+- Email: artsunt2003@gmail.com
+- GitHub: [@Artsuntkurian](https://github.com/Artsuntkurian)
 - LinkedIn: [linkedin.com/in/artsuntkurian](https://linkedin.com/in/artsuntkurian)
 
 ---
