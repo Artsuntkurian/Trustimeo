@@ -1,0 +1,16 @@
+# Ignore Python junk
+__pycache__/
+*.pyc
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore model weights
+*.pth
+
+# Ignore uploads
+app/uploads/
+
+# Ignore notebooks checkpoints
+.ipynb_checkpoints/

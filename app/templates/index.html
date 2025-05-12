@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake Detect</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <!-- ===== Hero Section ===== -->
+    <div class="container">
+        <div class="text-section">
+            <h1>Deepfake Detect Instantly</h1>
+            <p>Upload a video or image and let our AI/ML-powered tool determine if it's real or fake. Protect the integrity of visual content in a few clicks.</p>
+            <button class="upload-btn" onclick="document.getElementById('upload-section').scrollIntoView({ behavior: 'smooth' });">
+                Start Detection
+            </button> 
+        </div>
+        <div class="image-section">
+            <div class="image-box">
+                <img src="{{ url_for('static', filename='images/image01.png') }}" alt="Image 1">
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== How It Works Section ===== -->
+    <div class="how-it-works">
+        <h1>How Does It Work?</h1>
+        <div class="steps-container">
+            <div class="step">
+                <img src="{{ url_for('static', filename='images/Picture1.png') }}" alt="Uploading">
+                <h2>Uploading...</h2>
+                <p>Upload a video or image you want to analyze.</p>
+            </div>
+            <div class="step">
+                <img src="{{ url_for('static', filename='images/Picture2.png') }}" alt="Processing">
+                <h2>Processing</h2>
+                <p>Our model analyzes to detect any deepfake manipulation.</p>
+            </div>
+            <div class="step">
+                <img src="{{ url_for('static', filename='images/Picture3.png') }}" alt="Results">
+                <h2>Results</h2>
+                <p>Receive a result that tells you real or a deepfake.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Upload Section ===== -->
+    <div class="upload-section" id="upload-section">
+        <h1>Upload Media File for Deepfake Detection</h1>
+        <p>Select a video/image file to upload and analyze using our powerful deepfake detection tool.</p>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="file-upload" class="custom-file-upload">Choose a file</label>
+            <input id="file-upload" type="file" name="file" hidden/>
+            <div id="file-name" class="text-muted">No file chosen</div>
+            <button type="button" class="btn" id="uploadBtn">Upload and Analyze</button>
+        </form>
+
+        <div class="loader" id="loadingSpinner"></div>
+
+        <div class="video-container" id="videoContainer">
+            <img id="imagePreview" style="display: none;">
+            <video id="videoPlayback" controls style="display: none;"></video>
+            <div class="alert alert-light results-container" role="alert" id="detectionResult"></div>
+        </div>
+    </div>
+
+    <!-- ===== Blog Section ===== -->
+    <section id="deepfake-blog">
+        <div class="blog-container">
+            <h2>Understanding Deepfake Technology</h2>
+            <p class="blog-intro">
+                Deepfake technology is an AI-driven technique that manipulates video and audio to create highly realistic fake content.
+                While it has creative applications, it also raises concerns about misinformation, privacy, and digital security.
+            </p>
+            <div class="blog-content">
+                <img src="{{ url_for('static', filename='images/download(6).png') }}" alt="Deepfake Technology">
+                <div class="blog-text">
+                    <h3>How Do Deepfakes Work?</h3>
+                    <p>
+                        Deepfakes use deep learning models, particularly GANs (Generative Adversarial Networks), to analyze and recreate human faces, voices, and movements.
+                        They require extensive training on datasets to generate near-perfect replications.
+                    </p>
+                    <h3>Risks & Ethical Concerns</h3>
+                    <p>
+                        While deepfake technology has legitimate uses in entertainment and education, it also poses significant threats:
+                        <ul>
+                            <li>Misinformation & fake news propagation</li>
+                            <li>Identity theft and fraud</li>
+                            <li>Potential misuse in political and social contexts</li>
+                        </ul>
+                    </p>
+                    <h3>Detecting & Preventing Deepfakes</h3>
+                    <p>
+                        Researchers are developing deepfake detection models using AI-based analysis, inconsistencies in facial expressions, and metadata tracking.
+                        Our platform aims to provide users with real-time deepfake detection solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <div class="contact-section">
+        <div class="contact-box">
+            <h2>Contact Us</h2>
+            <p>Email: deepfake@gmail.com</p>
+            <p>Phone: +91 8075xx2xx3</p>
+            <p>Address: College of Engineering Karunagappally, Kollam</p>
+            <h2>Follow Us:</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="{{ url_for('static', filename='images/facebook.png') }}" alt="Facebook">
+                </a>
+                <a href="https://www.linkedin.com/in/artsuntkurian/" target="_blank">
+                    <img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/Artsuntkurian" target="_blank">
+                    <img src="{{ url_for('static', filename='images/github.png') }}" alt="Github">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
