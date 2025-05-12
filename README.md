@@ -56,7 +56,7 @@ Trustimeo/
 
 ```bash
 git clone https://github.com/Artsuntkurian/Trustimeo.git
-cd deepfake-detector
+cd Trustimeo
 ```
 
 ### 🐍 2. Create a Virtual Environment
