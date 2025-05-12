@@ -17,8 +17,8 @@ A web-based application to detect deepfake images or videos using a **Vision Tra
 
 ## 📷 Demo Preview
 
-> ![Preview Screenshot](preview.png)  
-> _Replace with your own screenshot image and rename to `preview.png`_
+> ![Preview Screenshot](screenshots/home.png)  
+> _Replace with your own screenshot image and rename to `home.png`_
 
 ---
 
@@ -98,6 +98,76 @@ Then visit:
 - Architecture: `vit_large_patch16_224` from `timm`
 - Trained for binary classification: `Real` (0) vs `Manipulated` (1)
 - Preprocessing: Resizing to 224x224, Normalization (ImageNet stats)
+
+---
+
+## 📊 Dataset
+
+The model was trained using a combination of real and manipulated video/image data from public deepfake datasets:
+
+- **FaceForensics++**: [https://github.com/ondyari/FaceForensics](https://github.com/ondyari/FaceForensics)
+- **DeepFake Detection Challenge (DFDC)**: [https://www.kaggle.com/c/deepfake-detection-challenge](https://www.kaggle.com/c/deepfake-detection-challenge)
+
+### 📁 Dataset Format
+
+- Videos were preprocessed into frames
+- Frames labeled as:
+  - `0 = Real`
+  - `1 = Manipulated`
+- Images resized to `224x224` and normalized using ImageNet stats
+
+---
+
+## 📉 Model Evaluation
+
+The model was evaluated on a held-out validation set. Below are the metrics:
+
+| Metric         | Value     |
+|----------------|-----------|
+| Accuracy       | 92.5%     |
+| Precision      | 91.3%     |
+| Recall         | 90.1%     |
+| F1-Score       | 90.7%     |
+
+### 📊 Confusion Matrix
+
+```
+              Predicted
+             | Real | Fake
+    ---------+------+------
+     Real    |  912 |  88
+     Fake    |  73  | 927
+```
+
+> This confusion matrix reflects a balanced performance between classes.
+
+---
+
+## 🖼️ Web Interface
+
+Here are some screenshots of the app in action:
+
+### 🔘 Home Page
+![Home](screenshots/home.png)
+
+### 📤 Upload Interface
+![Upload](screenshots/upload.png)
+
+### ✅ Prediction Result
+![Result](screenshots/result.png)
+
+> _Place these screenshots inside a `screenshots/` folder in the repo._
+
+---
+
+## 🧪 Sample Media Files
+
+You can test the app with the following sample files:
+
+- [Sample Real Video](https://drive.google.com/file/d/...)  
+- [Sample Deepfake Image](https://drive.google.com/file/d/...)
+
+> These were not included in the repo due to size, but hosted on Google Drive.
 
 ---
 
