@@ -79,7 +79,8 @@ Download `best_vit_model.pth` and place it in:
 ```
 app/model/best_vit_model.pth
 ```
-[Download model weights (.pth)](https://drive.google.com/file/d/1trntJzGb9neosHBAtLWqjzdfjS2aWcEV/view?usp=drive_link)
+[Download model weights (.pth)](https://drive.google.com/uc?export=download&id=1trntJzGb9neosHBAtLWqjzdfjS2aWcEV)
+
 
 > If you don’t have it, you can train your own using the Jupyter notebook in `notebooks/`.
 
