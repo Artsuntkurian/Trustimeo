@@ -17,7 +17,7 @@ A web-based application to detect deepfake images or videos using a **Vision Tra
 
 ## 📷 Demo Preview
 
-> ![Preview Screenshot](screenshots/web_ui.png)  
+> ![Preview Screenshot](screenshots/home.png)  
 
 
 ---
@@ -56,7 +56,7 @@ Trustimeo/
 
 ```bash
 git clone https://github.com/Artsuntkurian/Trustimeo.git
-cd deepfake-detector
+cd Trustimeo
 ```
 
 ### 🐍 2. Create a Virtual Environment
