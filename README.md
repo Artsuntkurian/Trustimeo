@@ -131,6 +131,10 @@ The model was evaluated on a held-out validation set. Below are the metrics:
 
 ### 📊 Confusion Matrix
 
+> ![Preview Screenshot](screenshots/confusion_matrix.png) 
+
+
+
 ```
               Predicted
              | Real | Fake
