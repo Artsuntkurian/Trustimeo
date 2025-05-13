@@ -120,6 +120,15 @@ The model was trained using a combination of real and manipulated video/image da
 
 ---
 
+## 🧪 Sample Files and Model Weights
+
+- [Download Trained Model (.pth)](https://drive.google.com/uc?export=download&id=1trntJzGb9neosHBAtLWqjzdfjS2aWcEV)
+- [Sample Real Image](https://drive.google.com/uc?export=download&id=1aZtWodUGedKViC8CnHMTHwi0qAm5D7wI)
+- [Sample Deepfake Image](https://drive.google.com/uc?export=download&id=1vW6Ib8pNYBjhpA7CO07Uy04RMJL5-wN2)
+- [Sample Real Video](https://drive.google.com/uc?export=download&id=1-REluWj977Ilwp4-Q3X7gtUbZ5AV0WPf)
+- [Sample Fake Video](https://drive.google.com/uc?export=download&id=1_MtxPczMZnYrCBjyr5xDO4KRaWD74IUO)
+
+
 ## 📉 Model Evaluation
 
 The model was evaluated on a held-out validation set. Below are the metrics:
